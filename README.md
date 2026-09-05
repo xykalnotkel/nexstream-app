@@ -1,6 +1,6 @@
-# NexStream V2
+# XyTube V2
 
-A modern, resilient, and highly available video streaming interface built with Next.js (Frontend) and Go (Backend). NexStream employs an intelligent fallback mechanism to fetch data from multiple independent endpoints, ensuring maximum uptime without relying on a single point of failure.
+A modern, resilient, and highly available video streaming interface built with Next.js (Frontend) and Go (Backend). XyTube employs an intelligent fallback mechanism to fetch data from multiple independent endpoints, ensuring maximum uptime without relying on a single point of failure.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?logo=go)](https://golang.org/)

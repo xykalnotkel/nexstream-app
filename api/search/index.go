@@ -28,11 +28,14 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
 	query := r.URL.Query().Get("q")
-	if query == "" {
-		query = "lofi"
+	
+	endpoint := ""
+	if query == "" || query == "trending" {
+		endpoint = "/popular" // Ambil video populer/umum
+	} else {
+		endpoint = fmt.Sprintf("/search?q=%s", url.QueryEscape(query))
 	}
 
-	endpoint := fmt.Sprintf("/search?q=%s", url.QueryEscape(query))
 	success := false
 
 	for _, baseURL := range apiInstances {
